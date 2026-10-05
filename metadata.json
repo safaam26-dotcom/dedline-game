@@ -1,0 +1,6 @@
+{
+  "name": "Deadline Run",
+  "description": "Game 2D endless runner bertema kehidupan mahasiswa. Kendalikan mahasiswi berlari melewati rintangan kuliah, naik level, dan hadapi Sidang Skripsi!",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

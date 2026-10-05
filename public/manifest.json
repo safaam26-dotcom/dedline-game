@@ -1,0 +1,20 @@
+{
+  "short_name": "Deadline Run",
+  "name": "DEADLINE RUN: Game Mahasiswi ISTTS",
+  "description": "Game endless runner mahasiswi ISTTS menghadapi tugas kuliah, deadline, dan sidang skripsi.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "landscape",
+  "theme_color": "#0b192c",
+  "background_color": "#0b192c",
+  "icons": [
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

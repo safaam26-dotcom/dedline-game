@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>DEADLINE RUN: Game Mahasiswi ISTTS</title>
+    <meta name="description" content="Game 2D endless runner bertema kehidupan mahasiswa. Kendalikan mahasiswi berlari melewati rintangan kuliah, naik level, dan hadapi Sidang Skripsi!" />
+    
+    <!-- PWA Configuration -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#0b192c" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Deadline Run" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <!-- Early PWA Install Prompt Capture -->
+    <script>
+      window.__pwaPrompt = null;
+      window.addEventListener('beforeinstallprompt', function(e) {
+        e.preventDefault();
+        window.__pwaPrompt = e;
+        window.dispatchEvent(new CustomEvent('pwa-prompt-ready'));
+      });
+      window.addEventListener('appinstalled', function() {
+        window.__pwaPrompt = null;
+        window.dispatchEvent(new CustomEvent('pwa-installed-success'));
+      });
+    </script>
+
+    <meta property="og:title" content="DEADLINE RUN: Game Mahasiswi ISTTS" />
+    <meta property="og:description" content="Game 2D endless runner bertema kehidupan mahasiswa. Kendalikan mahasiswi berlari melewati rintangan kuliah, naik level, dan hadapi Sidang Skripsi!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/app-icon.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="/app-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-slate-900 text-slate-100 select-none overflow-hidden touch-manipulation">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((reg) => console.log('ServiceWorker registered with scope:', reg.scope))
+            .catch((err) => console.error('ServiceWorker registration failed:', err));
+        });
+      }
+    </script>
+  </body>
+</html>
+

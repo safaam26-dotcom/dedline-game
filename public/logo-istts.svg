@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="1000" height="1000">
+  <defs>
+    <!-- Top Arc for INSTITUT SAINS DAN TEKNOLOGI TERPADU -->
+    <path id="topArc" d="M 118.7,475.1 A 252,252 0 1,1 481.3,475.1" fill="none" />
+    <!-- Bottom Arc for SURABAYA -->
+    <path id="bottomArc" d="M 189.5,526.5 A 252,252 0 0,0 410.5,526.5" fill="none" />
+    <!-- Inner Arc for ISTTS -->
+    <path id="isttsArc" d="M 204.9,440.9 A 170,170 0 0,0 395.1,440.9" fill="none" />
+  </defs>
+
+  <!-- Outer Yellow Band with Black Border -->
+  <circle cx="300" cy="300" r="292" fill="#FCC200" stroke="#1A191D" stroke-width="8" />
+
+  <!-- Inner Black Circle with Black Border -->
+  <circle cx="300" cy="300" r="212" fill="#1A191D" stroke="#1A191D" stroke-width="5" />
+
+  <!-- Top Text: INSTITUT SAINS DAN TEKNOLOGI TERPADU -->
+  <text font-family="Liberation Sans, 'Arial Black', Arial, sans-serif" font-size="29" font-weight="900" fill="#1A191D" letter-spacing="3.5px">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">
+      INSTITUT SAINS DAN TEKNOLOGI TERPADU
+    </textPath>
+  </text>
+
+  <!-- Left Star (5-pointed black star) -->
+  <g transform="translate(151.9, 503.9) rotate(-54)" fill="#1A191D">
+    <polygon points="0,-17 5.1,-5.1 17,-5.1 7.5,2.3 11.2,15 0,7.5 -11.2,15 -7.5,2.3 -17,-5.1 -5.1,-5.1" />
+  </g>
+
+  <!-- Right Star (5-pointed black star) -->
+  <g transform="translate(448.1, 503.9) rotate(54)" fill="#1A191D">
+    <polygon points="0,-17 5.1,-5.1 17,-5.1 7.5,2.3 11.2,15 0,7.5 -11.2,15 -7.5,2.3 -17,-5.1 -5.1,-5.1" />
+  </g>
+
+  <!-- Bottom Text: SURABAYA -->
+  <text font-family="Liberation Sans, 'Arial Black', Arial, sans-serif" font-size="36" font-weight="900" fill="#1A191D" letter-spacing="4px">
+    <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">
+      SURABAYA
+    </textPath>
+  </text>
+
+  <!-- Inside Black Circle: ISTTS Yellow Curved Text -->
+  <text font-family="Liberation Sans, 'Arial Black', Arial, sans-serif" font-size="44" font-weight="900" fill="#FCC200" letter-spacing="5px">
+    <textPath href="#isttsArc" startOffset="50%" text-anchor="middle">
+      ISTTS
+    </textPath>
+  </text>
+
+  <!-- Atomic Orbit Structure (Center at cx=300, cy=256) -->
+  <g stroke="#FCC200" stroke-width="8" fill="none">
+    <!-- Orbit 1: Horizontal / slightly tilted -8 deg -->
+    <ellipse cx="300" cy="256" rx="162" ry="66" transform="rotate(-8, 300, 256)" />
+
+    <!-- Orbit 2: Tilted right 45 deg -->
+    <ellipse cx="300" cy="256" rx="162" ry="66" transform="rotate(45, 300, 256)" />
+
+    <!-- Orbit 3: Tilted left -45 deg -->
+    <ellipse cx="300" cy="256" rx="162" ry="66" transform="rotate(-45, 300, 256)" />
+
+    <!-- Central Monogram Nucleus Circle -->
+    <circle cx="300" cy="256" r="50" fill="#1A191D" stroke="#FCC200" stroke-width="8" />
+
+    <!-- Inside Nucleus: Monogram Emblem -->
+    <line x1="300" y1="256" x2="300" y2="306" stroke="#FCC200" stroke-width="8" stroke-linecap="round" />
+    <line x1="300" y1="256" x2="268" y2="220" stroke="#FCC200" stroke-width="8" stroke-linecap="round" />
+    <line x1="300" y1="256" x2="332" y2="220" stroke="#FCC200" stroke-width="8" stroke-linecap="round" />
+    <line x1="270" y1="254" x2="330" y2="254" stroke="#FCC200" stroke-width="7.5" stroke-linecap="round" />
+  </g>
+
+  <!-- 6 Electron Spheres (Filled Yellow with dark contour) -->
+  <g fill="#FCC200" stroke="#1A191D" stroke-width="2.5">
+    <!-- Top-right on Orbit 2 (~1 o'clock) -->
+    <circle cx="336" cy="120" r="17" />
+    <!-- Upper-left on Orbit 3 (~10 o'clock) -->
+    <circle cx="184" cy="165" r="17" />
+    <!-- Far-left on Orbit 1 (~8:30 o'clock) -->
+    <circle cx="148" cy="232" r="17" />
+    <!-- Far-right on Orbit 1 (~3:30 o'clock) -->
+    <circle cx="444" cy="296" r="17" />
+    <!-- Lower-right on Orbit 2 (~5 o'clock) -->
+    <circle cx="418" cy="366" r="17" />
+    <!-- Lower-left on Orbit 3 (~7 o'clock) -->
+    <circle cx="266" cy="392" r="17" />
+  </g>
+</svg>
